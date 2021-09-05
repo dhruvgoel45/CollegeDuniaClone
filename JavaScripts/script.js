@@ -89,3 +89,23 @@ var TxtType = function(el, toRotate, period) {
             })
         }
     }
+
+    const btech = document.getElementById("btech");
+    const myDropdown = document.getElementById("myDropdown");
+
+    const mba = document.getElementById("mba");
+    const MBAmyDropdown = document.getElementById("MBAmyDropdown");
+    
+    btech.addEventListener("mouseover", () => {
+        myDropdown.classList.remove("hide");
+    });
+    myDropdown.addEventListener("mouseleave", () => {
+        myDropdown.classList.add("hide");
+    });
+
+    mba.addEventListener("mouseover", () => {
+        MBAmyDropdown.classList.remove("hide");
+    });
+    MBAmyDropdown.addEventListener("mouseleave", () => {
+        MBAmyDropdown.classList.add("hide");
+    });
